@@ -1,9 +1,3 @@
-##CS 101
-##Prog4.py
-##PROGRAM 4
-##Lia Vang
-##lvp4b@mail.umkc.edu
-##
 ##PROBLEM: Draw a picture using turtle graphics using command inputs from a file
 ##
 ##ALGORITHM:
