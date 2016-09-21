@@ -1,9 +1,3 @@
-# # CS 101
-# # Prog5.py
-# # Program 5
-# # Lia Vang
-# # lvp4b@mail.umkc.edu
-# #
 # # PROBLEM: Calculate the average monthly precipitation and total precipitation per month
 # #
 # # ALGORITHM:
