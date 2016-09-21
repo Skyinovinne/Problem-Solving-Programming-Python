@@ -1,9 +1,3 @@
-##CS 101
-##Prog1.py
-##Program 1
-##Lia Vang
-##lvp4b@mail.umkc.edu
-##
 ##PROBLEM: Mark is stuck on Mars and needs to figure out how long he can
 ##         survive eating rations and potatoes.
 ##
@@ -40,5 +34,3 @@ totalDays = rationDays + potatoDays
 print('This plan gives you a total of', totalDays, 'days of food\n')
 
 print('Good luck Mark')
-
-
