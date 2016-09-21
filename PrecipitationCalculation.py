@@ -1,43 +1,43 @@
-# # PROBLEM: Calculate the average monthly precipitation and total precipitation per month
-# #
-# # ALGORITHM:
-# #      1. Ask the user for the precipitation file to read
-# #           If the file is not found:
-# #              Warn the user and ask them to choose a new file
-# #      2. Open the precipitation file for reading
-# #           If the file has an I/O error:
-# #              Warn the user
-# #                 Ask them to choose a new file
-# #      3. Group the sum of the precipitation on each line in the precipitation
-# #         file by the year and monthlyAverages and store it in a dictionary with a key in YYYYMM format
-# #           Ignore precipitation values that aren't a float
-# #      4. Close the precipitation file
-# #      5.  Ask the user for the output filename
-# #      6.  Open the output file for writing
-# #            If the file can't be opened for writing:
-# #          Warn the user and ask them to choose a new file
-# #            If the file already exists, overwrite it without asking
-# #      7. Sort the dictionary by key in ascending order
-# #      8. For each entry in the sorted dictionary:
-# #          Write a new line to the output file with the key and value separated by a comma
-# #      9. Close the output file
-# #      10. Group the sum and the count of the values of each entry in the dictionary by monthlyAverages and store it in a new dictionary with an integer key
-# #      11. For each monthlyAverages number from 1 to 12:
-# #            Calculate the average using the new dictionary and store it in an average dictionary
-# #            If data for a monthlyAverages doesn't exist, store 0 in the average dictionary as for that monthlyAverages
-# #      12. Display a header for the monthly month averages and the headers for two columns of information
-# #      13. Sort the average dictionary by key in ascending order
-# #      14. For each entry in the sorted average dictionary:
-# #            Find the abbreviated name of the monthlyAverages corresponding to the key
-# #              Print a line containing the abbreviated monthlyAverages name followed by average precipitation
-# #      15. Extra Credit: Plot the total monthly averages on a graph
-# # ERROR HANDLING:
-# #     Input validation. Incorrect inputs within a file is ignored.
+##PROBLEM: Calculate the average monthly precipitation and total precipitation per month
+##
+##ALGORITHM:
+##      1. Ask the user for the precipitation file to read
+##           If the file is not found:
+##              Warn the user and ask them to choose a new file
+##      2. Open the precipitation file for reading
+##           If the file has an I/O error:
+##              Warn the user
+##                 Ask them to choose a new file
+##      3. Group the sum of the precipitation on each line in the precipitation
+##         file by the year and monthlyAverages and store it in a dictionary with a key in YYYYMM format
+##           Ignore precipitation values that aren't a float
+##      4. Close the precipitation file
+##      5.  Ask the user for the output filename
+##      6.  Open the output file for writing
+##            If the file can't be opened for writing:
+##          Warn the user and ask them to choose a new file
+##            If the file already exists, overwrite it without asking
+##      7. Sort the dictionary by key in ascending order
+##      8. For each entry in the sorted dictionary:
+##          Write a new line to the output file with the key and value separated by a comma
+##      9. Close the output file
+##      10. Group the sum and the count of the values of each entry in the dictionary by monthlyAverages and store it in a new dictionary with an integer key
+##      11. For each monthlyAverages number from 1 to 12:
+##            Calculate the average using the new dictionary and store it in an average dictionary
+##            If data for a monthlyAverages doesn't exist, store 0 in the average dictionary as for that monthlyAverages
+##      12. Display a header for the monthly month averages and the headers for two columns of information
+##      13. Sort the average dictionary by key in ascending order
+##      14. For each entry in the sorted average dictionary:
+##            Find the abbreviated name of the monthlyAverages corresponding to the key
+##              Print a line containing the abbreviated monthlyAverages name followed by average precipitation
+##      15. Extra Credit: Plot the total monthly averages on a graph
+##ERROR HANDLING:
+##     Input validation. Incorrect inputs within a file is ignored.
 
 import os.path
 import pylab
 
-# Ask the user for the precipitation file
+#Ask the user for the precipitation file
 def getPrecipitationFile():
     while True:
         try:
