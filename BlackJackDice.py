@@ -1,9 +1,3 @@
-##CS 101
-##Prog2.py
-##Program 2
-##Lia Vang
-##lvp4b@mail.umkc.edu
-##
 ##PROBLEM: Simulate the Blackjack Dice betting game
 ##
 ##ALGORITHM:
